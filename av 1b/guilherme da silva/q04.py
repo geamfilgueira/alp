@@ -1,0 +1,10 @@
+cvendidos = int(input('carros vendidos: '))
+vvendas = int(input('valor total das vendas: '))
+sfixo = int(input('salario fixo: '))
+cfixa = int(input('comissao fixa por carros: '))
+vcv = int(input('valor dos carros vendidos: '))
+porc = (vvendas*0.05)
+sal1 = (cvendidos*cfixa)
+salario = (porc+sal1)
+print('o salario final sera de: ', salario)
+#acertou 20
