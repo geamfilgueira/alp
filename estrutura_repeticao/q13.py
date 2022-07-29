@@ -6,17 +6,19 @@ media_idade = 0
 soma_idades = 0
 
 maior_idade = -1
-menor_idade = 150
+menor_idade = 100
 
 while fim != 'sim':
     nome = input("Digite o nome do aluno: ")
     sexo = input("Qual o sexo do aluno (M ou F): ")
-    idade = int(input("Digite a idade do aluno"))
+    idade = int(input("Digite a idade do aluno: "))
     soma_idades = soma_idades + idade
+
     if idade > maior_idade:
         maior_idade = idade
     elif idade < menor_idade:
         menor_idade = idade
+    
     total_alunos = total_alunos + 1
     if sexo == 'M':
         total_s_m = total_s_m + 1
