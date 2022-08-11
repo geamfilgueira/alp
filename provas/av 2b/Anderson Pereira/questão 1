@@ -1,0 +1,22 @@
+i = 'nao'
+grupo_1 = 0
+grupo_2 = 0
+grupo_3 = 0
+grupo_4 = 0
+
+while i != 'sim' :
+    num = int(input("digite um numero"))
+    if num >= 0 and num <= 25 :
+        grupo_1 += 1
+    elif num >= 26 and num <= 50 :
+        grupo_2 += 1
+    elif num >= 51  and num <= 75 :
+        grupo_3 += 1
+    elif num >= 76 and num <= 100 :
+        grupo_4 += 1
+    else :
+        print("esse numero não pertence a nenhum grupo")
+    i = input("digite se deseja continuar {sim/não")
+print("os grupos tem esse total de numeros" , grupo_1 , grupo_2 , grupo_3 , grupo_4)
+
+# 25 pontos

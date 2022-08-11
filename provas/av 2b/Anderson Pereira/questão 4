@@ -1,0 +1,49 @@
+altura_masc = 0
+altura_fem = 0
+masc = 0
+fem = 0
+i = 'nao'
+soma_masculino = 0
+soma_feminina = 0
+maior_altura = 10
+menor_altura = 1000
+população = 0
+while i == 'nao' :
+    pessoa = float(input("digite seu sexo"))
+    população += 1
+    altura = float(input("digite sua altura"))
+    if pessoa == 0 :
+        fem += 1
+    else :
+        masc += 1
+    if pessoa == 0 :
+        if altura >= maior_altura :
+            maior_altura == altura
+            soma_feminina += 1
+            altura_fem += altura
+        elif altura <= menor_altura :
+            menor_altura = altura
+            altura_fem += altura
+            soma_feminina += altura
+    else :
+        if altura >= maior_altura :
+            maior_altura = altura
+            altura_masc += altura
+        elif altura <= menor_altura :
+            menor_altura = altura
+            altura_masc += altura
+    i = input("deseja sair {sim/não}")
+media_população = soma_feminina + soma_masculino / população
+media_feminina = 0
+media_masculina = 0
+if fem >= 0 :
+  media_feminina == 0
+else :
+    media_feminina = soma_feminina / fem
+if masc >= 0 :
+    media_masculina == 0
+else :
+    media_masculina = soma_masculino / masc
+print("a media de altura da população foi" , media_população , "a maior altura",maior_altura ,"a menor é" , menor_altura , "a media da altura das mulheres foi" ,media_feminina , "a media masculina foi" , media_masculina )
+
+#considerei 20
