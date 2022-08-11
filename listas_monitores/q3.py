@@ -5,7 +5,7 @@ c = 0
 media = 0
 
 while a < 20:
-    b = int(input())
+    b = int(input("Digite a nota do aluno: "))
 
     media = media + b
 
@@ -13,6 +13,6 @@ while a < 20:
         c = c + 1
     a = a + 1
 
-print(f"Quantidade de alunos com média maior que 7: {c}")
+print("Quantidade de alunos com média maior que 7: ", c)
 
-print(f"Média aritmética da turma {media / 20}")
+print("Média aritmética da turma ",  (media / 20))
