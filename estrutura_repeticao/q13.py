@@ -16,7 +16,7 @@ while fim != 'sim':
 
     if idade > maior_idade:
         maior_idade = idade
-    elif idade < menor_idade:
+    if idade < menor_idade:
         menor_idade = idade
     
     total_alunos = total_alunos + 1

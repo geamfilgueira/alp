@@ -1,17 +1,17 @@
-import os
 
-while True:
-    print("|----------------------- Menu Simples -----------------------|")
-    print("|  Se quiser cadastrar funcionário, digite 1                 |")
-    print("|  Se quiser cadastrar alimento, digite 2                    |")
-    print("|  Se quiser cadastrar fornecedor, digite 3                  |")
-    print("|                                                            |")
-    print("|  Se quiser sair do programa, digite 0                      |")
-    print("|------------------------------------------------------------|")
-    print("")
-    a = int(input("Digite aqui: "))
+op = 0
+while op != 6:
+    print("1 - Questao 01")
+    print("2 - Questao 02")1
+    print("3 - Questao 03")
+    print("4 - Questao 04")
+    print("5 - Questao 05")
+    print("6 - Sair ")
+    op = int(input("Digite uma opção: "))
 
-    if a == 0:
-        break
-    os.system('clear')
-
+    if op == 1:
+        n1 = int(input("Digite o numero"))
+        n2 = int(input("Digite o numero"))
+        print(n1+n2)
+    elif op == 2:
+        print("Anderson o lider!")

@@ -1,18 +1,13 @@
-a = 0
-
-c = 0
-
+cont    = 0
+nota    = 0
+cont_aluno = 0
 media = 0
-
-while a < 20:
-    b = int(input("Digite a nota do aluno: "))
-
-    media = media + b
-
-    if b >= 7:
-        c = c + 1
-    a = a + 1
-
-print("Quantidade de alunos com média maior que 7: ", c)
-
-print("Média aritmética da turma ",  (media / 20))
+while nota >=0:
+    nota = float(input("Digite a nota do aluno ou nota negativa para sair: "))
+    if nota >= 0:
+        media = media + nota
+        cont_aluno+=1
+        if nota >= 7:
+            cont=cont+1
+print ("Alunos com nota >= 7 ", cont)
+print("A media de notas da turma eh: ", media/cont_aluno)
